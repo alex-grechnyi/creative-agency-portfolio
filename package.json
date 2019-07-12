@@ -1,0 +1,29 @@
+{
+  "name": "creative_agency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-grechnyi/creative-agency-portfolio.git"
+  },
+  "author": "alex-grechnyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-grechnyi/creative-agency-portfolio/issues"
+  },
+  "homepage": "https://github.com/alex-grechnyi/creative-agency-portfolio#readme"
+}
