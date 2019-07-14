@@ -1,0 +1,27 @@
+.header {
+  background-color: $color-primary;
+  grid-column: center-start / center-end;
+  background-image: url(../img/world-map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(52rem, min-content));
+  align-content: center;
+  justify-content: center;
+  &__img {
+    justify-self: center;
+  }
+  &__about {
+    align-self: center;
+    text-align: center;
+  }
+}
+
+.heading-primary {
+  display: flex;
+  flex-direction: column;
+}
+
+
+

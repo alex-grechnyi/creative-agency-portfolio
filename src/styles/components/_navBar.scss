@@ -1,0 +1,39 @@
+.nav-bar {
+  grid-column: center-start / center-end;
+  @include bgGradient($color-black, $color-grey-dark-1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+}
+
+.navigation {
+  align-self: center;
+  justify-self: flex-end;
+  &__list {
+    list-style: none;
+    padding-right: 5rem;
+  }
+  &__item {
+    display: inline-block;
+    padding-left: 4rem;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+}
+
+.logo {
+  padding-left: 5rem;
+  height: 5rem;
+  align-self: center;
+}
