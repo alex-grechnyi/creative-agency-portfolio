@@ -23,6 +23,7 @@ function reload() {
     browserSync.reload();
 }
 function watch(){
+    style();
     browserSync.init(
         {
             server: {
@@ -30,7 +31,7 @@ function watch(){
             }
         }
     );
-    gulp.watch("./src/styles/*.scss", style);
+    gulp.watch("./src/styles/**/*.scss", style);
     gulp.watch("./src/*.html", reload);
 }
 
