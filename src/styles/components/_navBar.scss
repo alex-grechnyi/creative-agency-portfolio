@@ -1,5 +1,5 @@
 .nav-bar {
-  grid-column: center-start / center-end;
+  grid-column: 1;
   @include bgGradient($color-black, $color-grey-dark-1);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));

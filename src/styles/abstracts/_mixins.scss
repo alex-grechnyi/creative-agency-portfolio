@@ -1,0 +1,9 @@
+@mixin bgGradient($firstColor, $secondColor) {
+  background-image: repeating-linear-gradient(140deg, $firstColor, $firstColor 4px, $secondColor 1px, $secondColor 5px);
+}
+
+@mixin grid($cols) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) repeat($cols, 9.5rem) minmax(0, 1fr);
+  align-content: center;
+}
