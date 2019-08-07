@@ -1,3 +1,28 @@
-.work {
+.works-section {
   grid-column: 1;
+  background-color: $color-primary;
+  background-image: linear-gradient(
+                  to right,
+                  rgba($color-primary, 0.9),
+                  rgba(#e6d635, 0.8)),url(../img/work-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @include grid(12);
+}
+
+.works {
+  grid-row: 1 / -1;
+  grid-column: 2 / 14;
+  text-align: center;
+}
+
+.work {
+  font-size: 0;
+  &_item {
+    transition: all .2s;
+    &:hover {
+      transform: scale(1.05) translateY(-.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+    }
+  }
 }

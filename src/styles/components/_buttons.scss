@@ -12,25 +12,30 @@
     transition: all .2s;
     transform: skewX(30deg);
   }
+
   &:hover {
     transform: translateY(-3px) skewX(30deg);
     box-shadow: 0 1rem 2rem rgba($color-black, .2);
   }
+
   &:active,
   &:focus {
     outline: none;
     transform: translateY(-1px) skewX(30deg);
-    box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
   }
+
   &--black {
     color: $color-white;
     background-color: $color-black;
   }
+
   &--primary {
     color: $color-black;
     background-color: $color-primary;
   }
 }
+
 .btn-text {
   display: inline-block;
   transform: skewX(-30deg);

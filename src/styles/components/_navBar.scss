@@ -8,14 +8,17 @@
 .navigation {
   align-self: center;
   justify-self: flex-end;
+
   &__list {
     list-style: none;
     padding-right: 5rem;
   }
+
   &__item {
     display: inline-block;
     padding-left: 4rem;
   }
+
   &__link {
     &:link,
     &:visited {
@@ -25,11 +28,11 @@
       text-decoration: none;
       text-transform: uppercase;
     }
+
     &:hover {
       color: $color-primary;
     }
   }
-
 }
 
 .logo {

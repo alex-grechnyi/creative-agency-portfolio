@@ -22,10 +22,11 @@
   grid-row: 1 / -1;
   grid-column: 3 / 13;
   text-align: center;
+
   &-list {
     display: flex;
     justify-content: space-between;
-    margin-left: -9.5rem;
+    margin-left: -8.5rem;
   }
 }
 
@@ -35,22 +36,25 @@
     flex-direction: column;
     align-items: center;
   }
+
   &_img {
     width: 380px;
     clip-path: circle(39%);
-      &-shape {
+
+    &-shape {
+      width: 380px;
+      position: relative;
+
+      &::before {
         width: 380px;
-        position: relative;
-        &::before {
-          width: 380px;
-          position: absolute;
-          content: "";
-          background-color: $color-white;
-          clip-path: circle(43%);
-          margin: -7px;
-          top: 6px;
-          left: 7px;
-          bottom: 9px;
+        position: absolute;
+        content: "";
+        background-color: $color-white;
+        clip-path: circle(43%);
+        margin: -7px;
+        top: 6px;
+        left: 7px;
+        bottom: 9px;
       }
     }
   }
