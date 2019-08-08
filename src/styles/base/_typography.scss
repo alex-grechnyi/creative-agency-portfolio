@@ -68,3 +68,12 @@ body {
   font-size: $default-font-size;
   font-weight: 600;
 }
+.heading-6 {
+  @extend .heading-5;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
