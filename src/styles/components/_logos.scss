@@ -1,3 +1,24 @@
 .logos {
-  grid-column: 1;
+  &-section {
+    grid-column: 1;
+    @include grid(12);
+    background-color: $color-black;
+  }
+
+  &_list {
+    grid-row: 1 / -1;
+    grid-column: 2 / 14;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &_item {
+    transition: all .2s;
+
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
+  }
 }
+
