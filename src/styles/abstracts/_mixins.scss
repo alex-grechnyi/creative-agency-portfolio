@@ -4,6 +4,6 @@
 
 @mixin grid($cols) {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) repeat($cols, 9.75rem) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) repeat($cols, minmax(min-content, 9.75rem)) minmax(0, 1fr);
   align-content: center;
 }
