@@ -1,5 +1,4 @@
 .services-section {
-  grid-column: 1;
   @include grid(12);
   grid-template-rows: repeat(2, 1fr);
 
@@ -20,13 +19,13 @@
 
 .services {
   grid-row: 1 / -1;
-  grid-column: 3 / 13;
+  grid-column: 2 / 14;
   text-align: center;
 
   &-list {
     display: flex;
-    justify-content: space-between;
-    margin-left: -8.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -35,18 +34,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 38rem;
+    flex: 1 0 30rem;
   }
 
   &_img {
-    width: 380px;
+    width: 100%;
     clip-path: circle(39%);
 
     &-shape {
-      width: 380px;
+      width: 100%;
       position: relative;
 
       &::before {
-        width: 380px;
+        width: 100%;
         position: absolute;
         content: "";
         background-color: $color-white;

@@ -1,6 +1,5 @@
 .logos {
   &-section {
-    grid-column: 1;
     @include grid(12);
     background-color: $color-black;
   }
@@ -11,10 +10,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 80rem;
+    }
   }
 
   &_item {
     transition: all .2s;
+    width: 12rem;
+
+    &:nth-child(2) {
+      width: 16rem;
+    }
 
     &:hover {
       transform: translateY(-1.5rem) scale(1.03);

@@ -1,26 +1,49 @@
 .header {
-  grid-column: 1;
   background-color: $color-primary;
   background-image: url(../img/world-map.png);
   background-repeat: no-repeat;
   background-position: center;
   min-height: 85vh;
   @include grid(12);
+  @include respond(phone) {
+    min-height: auto;
+  }
 
   &__img {
+    width: 42.5rem;
     grid-column: 2 / 8;
+    @include respond(tab-land) {
+      grid-column: 2 / 14;
+      justify-self: center;
+      margin-bottom: 2rem;
+    }
+    @include respond(phone) {
+      width: 36rem;
+    }
   }
 
   &__about {
     text-align: center;
     align-self: center;
     grid-column: 8 / 14;
+    @include respond(tab-land) {
+      grid-column: 4 / 12;
+      justify-self: center;
+    }
   }
 }
 
 .heading-primary {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  &--sub {
+    max-width: 58rem;
+    @include respond(phone) {
+      max-width: 40rem;
+    }
+  }
 }
 
 

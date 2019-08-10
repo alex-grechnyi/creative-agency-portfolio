@@ -1,0 +1,52 @@
+.nav-bar {
+  @include bgGradient($color-black, $color-grey-dark-1);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding: 0 5rem;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 3rem;
+    padding: 1.5rem 0;
+  }
+}
+
+.navigation {
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    grid-column-gap: 5rem;
+    @include respond(tab-port) {
+      grid-column-gap: 2.5rem;
+    }
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 700;
+      font-size: $default-font-size;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.logo {
+  height: 5rem;
+}
