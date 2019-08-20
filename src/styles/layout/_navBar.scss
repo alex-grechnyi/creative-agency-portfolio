@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  padding: 0 5rem;
+  padding: 1.5rem 5rem;
   @include respond(phone) {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -48,5 +48,7 @@
 }
 
 .logo {
-  height: 5rem;
+  img {
+    height: 5rem;
+  }
 }

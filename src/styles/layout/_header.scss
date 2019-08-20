@@ -4,9 +4,14 @@
   background-repeat: no-repeat;
   background-position: center;
   min-height: 85vh;
-  @include grid(12);
+  display: grid;
+  grid-template-rows: max-content auto;
   @include respond(phone) {
     min-height: auto;
+  }
+
+  &__main {
+    @include grid(12);
   }
 
   &__img {
@@ -45,6 +50,3 @@
     }
   }
 }
-
-
-

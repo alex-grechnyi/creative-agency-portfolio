@@ -24,7 +24,7 @@
     }
   }
 
-  &_logo {
+  &__logo {
     width: 27rem;
     margin-top: -5rem;
     margin-bottom: 2rem;
@@ -34,7 +34,7 @@
     }
   }
 
-  &_about {
+  &__about {
     grid-row: 2 / 3;
     grid-column: 1;
     @include respond(tab-land) {
@@ -46,7 +46,7 @@
     }
   }
 
-  &_nav {
+  &__nav {
     grid-row: 2 / 3;
     @include respond(tab-land) {
       grid-row: 3 / 4;
@@ -71,11 +71,11 @@
     }
   }
 
-  &_list {
+  &__list {
     list-style: none;
   }
 
-  &_item {
+  &__item {
     padding-bottom: 2rem;
 
     &:nth-child(1) {
@@ -83,7 +83,7 @@
     }
   }
 
-  &_link {
+  &__link {
     &:link,
     &:visited {
       font-weight: 600;
@@ -97,7 +97,7 @@
     }
   }
 
-  &_copyright {
+  &__copyright {
     grid-column: 1 / -1;
     grid-row: 2;
     background-color: $color-primary;

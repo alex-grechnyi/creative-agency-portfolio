@@ -18,11 +18,11 @@
     background-color: $color-primary;
   }
 
-  &_heading {
+  &__heading {
     grid-area: h;
   }
 
-  &_info {
+  &__info {
     grid-area: i;
 
     &--2 {
@@ -33,7 +33,7 @@
     }
   }
 
-  &_data {
+  &__data {
     grid-area: d;
     display: grid;
     grid-column-gap: 2rem;
@@ -47,7 +47,7 @@
     }
   }
 
-  &_group {
+  &__group {
     &:nth-child(5) {
       grid-column: span 2;
       width: 100%;
@@ -55,7 +55,7 @@
     }
   }
 
-  &_input {
+  &__input {
     padding: 1.3rem 2.5rem;
     border-radius: 2.5rem;
     border: none;
@@ -77,7 +77,7 @@
     }
   }
 
-  &_input:placeholder-shown + &_input-label {
+  &__input:placeholder-shown + &__input-label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
